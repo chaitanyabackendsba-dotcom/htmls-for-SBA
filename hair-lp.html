@@ -410,27 +410,6 @@
   </div>
 </section>
 
-<!-- Results -->
-<section class="section alt">
-  <div class="container">
-    <div class="section-head">
-      <div class="section-label">Real Results</div>
-      <h2 class="serif">See The Difference Cinch Makes</h2>
-      <p>Real patients. Real treatment plans. No filters, no shortcuts.</p>
-    </div>
-    <div class="ba-compare" id="baCompare">
-      <img class="ba-base" src="https://cinchclinics.com/assets/images/services/after.webp" alt="After treatment at Cinch Clinics" />
-      <div class="ba-before-layer" id="baBefore">
-        <img src="https://cinchclinics.com/assets/images/services/before.webp" alt="Before treatment at Cinch Clinics" />
-      </div>
-      <div class="ba-divider" id="baDivider"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></span></div>
-      <span class="ba-label ba-label-before">Before</span>
-      <span class="ba-label ba-label-after">After</span>
-    </div>
-    <p class="disclaimer">Drag the slider to compare. Real patient result from Cinch Clinics. Outcomes vary with skin type, condition, and treatment plan.</p>
-  </div>
-</section>
-
 <!-- Doctors -->
 <section class="section">
   <div class="container">
@@ -584,26 +563,6 @@
         '</div>' +
         '</div>';
     }).join("");
-  })();
-
-  // Before/after drag-to-compare
-  (function () {
-    var c = document.getElementById("baCompare");
-    if (!c) return;
-    var before = document.getElementById("baBefore");
-    var divider = document.getElementById("baDivider");
-    var dragging = false;
-    function setPos(clientX) {
-      var r = c.getBoundingClientRect();
-      var v = ((clientX - r.left) / r.width) * 100;
-      v = Math.max(0, Math.min(100, v));
-      before.style.clipPath = "inset(0 " + (100 - v) + "% 0 0)";
-      divider.style.left = v + "%";
-    }
-    c.addEventListener("pointerdown", function (e) { dragging = true; setPos(e.clientX); try { c.setPointerCapture(e.pointerId); } catch (x) {} });
-    c.addEventListener("pointermove", function (e) { if (dragging) setPos(e.clientX); });
-    window.addEventListener("pointerup", function () { dragging = false; });
-    c.addEventListener("pointercancel", function () { dragging = false; });
   })();
 
   function sendLead(e) {
