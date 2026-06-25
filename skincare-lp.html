@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Skin Care in Gachibowli, Hyderabad | Cinch Clinics</title>
+<meta name="description" content="Dermatologist-led skin care at Cinch Clinics, Gachibowli, Hyderabad. HydraFacial, chemical peels, RF microneedling, pigmentation and acne treatments. Book a free consultation." />
+<meta name="theme-color" content="#f9f4ef" />
+<meta name="robots" content="index, follow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #faf7f4;
+    --bg-soft: #f7f2ee;
+    --bg-card: rgba(255, 255, 255, 0.9);
+    --bg-glass: rgba(255, 255, 255, 0.72);
+    --accent: #f3b8a4;
+    --accent-soft: #f7d2c3;
+    --accent-gold: #d7b38c;
+    --accent-deep: #c18d71;
+    --text-main: #2d2622;
+    --text-soft: #7a6e65;
+    --border-subtle: rgba(180, 160, 140, 0.25);
+    --shadow-soft: 0 18px 45px rgba(40, 23, 10, 0.12);
+    --shadow-float: 0 24px 56px rgba(50, 30, 15, 0.14), 0 12px 28px rgba(50, 30, 15, 0.08);
+    --radius-lg: 26px;
+    --radius-md: 18px;
+    --radius-pill: 999px;
+    --transition-fast: 180ms ease-out;
+    --transition-med: 260ms ease-out;
+  }
+
+  * , *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--text-main);
+    background: radial-gradient(circle at top left, #fbece3 0, #f9f4ef 42%, #f5f0eb 75%, #f3eee9 100%);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; }
+
+  .container { width: min(1160px, 100% - 3rem); margin-inline: auto; }
+  .serif { font-family: "Playfair Display", "Times New Roman", serif; }
+
+  /* ===== Header ===== */
+  .lp-header {
+    position: sticky; top: 0; z-index: 60;
+    backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px);
+    background: linear-gradient(to bottom, rgba(250,244,238,0.96), rgba(250,244,238,0.82));
+    border-bottom: 1px solid rgba(230, 214, 199, 0.7);
+  }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.7rem 0; }
+  .logo { display: inline-flex; align-items: center; gap: 0.7rem; }
+  .logo img { width: 46px; height: 46px; object-fit: contain; }
+  .logo-text { display: flex; flex-direction: column; line-height: 1; }
+  .logo-name { font-size: 1.05rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; }
+  .logo-tag { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-soft); margin-top: 3px; }
+  .header-actions { display: flex; align-items: center; gap: 0.8rem; }
+  .header-phone { display: inline-flex; align-items: center; gap: 0.45rem; font-weight: 700; font-size: 0.95rem; color: #5b4336; }
+  .header-phone svg { width: 17px; height: 17px; }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    padding: 0.85rem 1.6rem; border-radius: var(--radius-pill); border: none; cursor: pointer;
+    font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+  .btn svg { width: 17px; height: 17px; }
+  .btn.primary { background: radial-gradient(circle at top left, #ffe9da, #eeb49e); color: #432823; box-shadow: 0 16px 36px rgba(140, 90, 60, 0.34); }
+  .btn.primary:hover { transform: translateY(-2px); box-shadow: 0 22px 44px rgba(140, 90, 60, 0.42); }
+  .btn.whatsapp { background: #1faf54; color: #fff; box-shadow: 0 16px 34px rgba(20, 130, 60, 0.32); }
+  .btn.whatsapp:hover { transform: translateY(-2px); }
+  .btn.ghost { background: rgba(255, 255, 255, 0.85); border: 1px solid rgba(193, 160, 139, 0.8); color: #5b4336; }
+  .btn.ghost:hover { transform: translateY(-2px); }
+  .btn.full { width: 100%; }
+  .btn.lg { padding: 1rem 2rem; font-size: 0.86rem; }
+  .header-cta { padding: 0.7rem 1.25rem; font-size: 0.74rem; }
+
+  /* ===== Hero ===== */
+  .hero { position: relative; overflow: hidden; }
+  .hero::before {
+    content: ""; position: absolute; inset: 0; z-index: 0;
+    background-image: url("https://cinchclinics.com/assets/images/treatment-img/Medi%20Facials%20%26%20IV%20Drips.webp");
+    background-size: cover; background-position: center right; opacity: 0.5;
+  }
+  .hero::after {
+    content: ""; position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(105deg, rgba(250,244,238,0.97) 0%, rgba(250,244,238,0.9) 42%, rgba(250,244,238,0.55) 100%);
+  }
+  .hero-inner { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr); gap: 3rem; align-items: center; padding: 3.2rem 0 3.6rem; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 0.5rem; text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.72rem; font-weight: 700; color: #6b4b3b; background: rgba(255, 255, 255, 0.7);
+    border: 1px solid var(--border-subtle); padding: 0.4rem 0.9rem; border-radius: 999px; margin-bottom: 1.1rem;
+  }
+  .eyebrow .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent-deep); }
+  .hero h1 { font-size: clamp(2.3rem, 4.6vw, 3.5rem); line-height: 1.08; margin: 0 0 1rem; font-weight: 700; }
+  .hero h1 span { background: linear-gradient(135deg, #52352a, #c18d71); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero-sub { font-size: 1.05rem; line-height: 1.7; color: var(--text-soft); max-width: 32rem; margin: 0 0 1.6rem; }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 1.7rem; }
+  .trust-row { display: flex; flex-wrap: wrap; gap: 1.4rem; }
+  .trust-item { display: flex; align-items: center; gap: 0.55rem; font-size: 0.88rem; font-weight: 600; color: #5b4336; }
+  .trust-item svg { width: 19px; height: 19px; color: var(--accent-deep); flex-shrink: 0; }
+
+  /* ===== Lead form ===== */
+  .lead-card { background: rgba(255, 255, 255, 0.96); border: 1px solid rgba(219, 180, 151, 0.9); border-radius: var(--radius-lg); box-shadow: var(--shadow-float); padding: 1.8rem 1.7rem; }
+  .lead-card .badge { display: inline-block; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 800; color: #1faf54; background: rgba(31, 175, 84, 0.12); padding: 0.35rem 0.8rem; border-radius: 999px; margin-bottom: 0.7rem; }
+  .lead-card h3 { font-size: 1.5rem; margin: 0 0 0.3rem; font-weight: 700; }
+  .lead-card p.muted { margin: 0 0 1.2rem; color: var(--text-soft); font-size: 0.92rem; }
+  .field { display: flex; flex-direction: column; gap: 0.3rem; margin-bottom: 0.8rem; }
+  .field label { font-size: 0.76rem; font-weight: 700; letter-spacing: 0.04em; color: #6b574a; text-transform: uppercase; }
+  .field input, .field select { border-radius: 12px; border: 1px solid rgba(218, 190, 166, 0.9); padding: 0.72rem 0.8rem; font-size: 0.95rem; background: #fffdfb; color: var(--text-main); transition: border var(--transition-fast), box-shadow var(--transition-fast); }
+  .field input:focus, .field select:focus { outline: none; border-color: var(--accent-deep); box-shadow: 0 0 0 3px rgba(217, 179, 140, 0.25); }
+  .form-note { font-size: 0.75rem; color: var(--text-soft); text-align: center; margin: 0.7rem 0 0; }
+  .form-note svg { width: 13px; height: 13px; vertical-align: -2px; }
+
+  /* ===== Section base ===== */
+  .section { padding: 4.2rem 0; position: relative; }
+  .section.alt { background: linear-gradient(180deg, rgba(248, 240, 233, 0.6), rgba(255, 253, 250, 0.4)); }
+  .section-head { text-align: center; max-width: 40rem; margin: 0 auto 2.4rem; }
+  .section-label { text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.74rem; font-weight: 800; color: var(--accent-deep); margin-bottom: 0.6rem; }
+  .section-head h2 { font-size: clamp(1.8rem, 3.4vw, 2.5rem); margin: 0 0 0.7rem; font-weight: 700; line-height: 1.15; }
+  .section-head p { color: var(--text-soft); font-size: 1rem; margin: 0; line-height: 1.6; }
+
+  /* ===== Treatments grid ===== */
+  .treatments-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.2rem; }
+  .treatment-card { background: rgba(255, 255, 255, 0.9); border: 1px solid rgba(220, 197, 178, 0.7); border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 14px 34px rgba(167, 133, 108, 0.1); display: flex; flex-direction: column; transition: transform var(--transition-med), box-shadow var(--transition-med); }
+  .treatment-card:hover { transform: translateY(-4px); box-shadow: 0 22px 46px rgba(167, 133, 108, 0.2); }
+  .t-img { aspect-ratio: 4 / 3; overflow: hidden; background: #efe4da; }
+  .t-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 420ms ease; }
+  .treatment-card:hover .t-img img { transform: scale(1.05); }
+  .t-body { padding: 1rem 1.2rem 1.2rem; display: flex; flex-direction: column; gap: 0.5rem; flex-grow: 1; }
+  .t-icon { width: 50px; height: 50px; border-radius: 14px; display: inline-flex; align-items: center; justify-content: center; background: radial-gradient(circle at 30% 20%, #fff, #f7d2c3); color: var(--accent-deep); box-shadow: 0 8px 18px rgba(159, 122, 96, 0.2); }
+  .t-icon svg { width: 26px; height: 26px; }
+  .treatment-card h3 { margin: 0; font-size: 1.06rem; font-weight: 700; }
+  .treatment-card p { margin: 0; font-size: 0.85rem; color: var(--text-soft); line-height: 1.5; flex-grow: 1; }
+  .t-call { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.3rem; font-size: 0.76rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #5b4336; }
+  .t-call svg { width: 15px; height: 15px; color: var(--accent-deep); }
+  .t-call:hover { color: var(--accent-deep); }
+  .center-cta { text-align: center; margin-top: 2.4rem; }
+
+  /* ===== Concerns ===== */
+  .concerns-grid { display: flex; flex-wrap: wrap; gap: 0.7rem; justify-content: center; }
+  .concern-pill { padding: 0.7rem 1.3rem; border-radius: 999px; font-size: 0.9rem; font-weight: 600; color: var(--text-main); background: rgba(255, 255, 255, 0.92); border: 1px solid rgba(218, 198, 178, 0.8); }
+
+  /* ===== Results (drag-to-compare) ===== */
+  .ba-compare { position: relative; max-width: 560px; margin-inline: auto; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-soft); border: 1px solid rgba(220, 197, 178, 0.7); touch-action: none; user-select: none; cursor: ew-resize; background: #000; }
+  .ba-base { display: block; width: 100%; height: auto; }
+  .ba-before-layer { position: absolute; inset: 0; clip-path: inset(0 50% 0 0); }
+  .ba-before-layer img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .ba-divider { position: absolute; top: 0; bottom: 0; left: 50%; width: 3px; background: rgba(255,255,255,0.95); transform: translateX(-50%); pointer-events: none; }
+  .ba-divider span { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 38px; height: 38px; border-radius: 50%; background: #fff; color: var(--accent-deep); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(40,23,10,0.3); }
+  .ba-divider span svg { width: 20px; height: 20px; }
+  .ba-label { position: absolute; bottom: 0.8rem; font-size: 0.64rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #fff; background: rgba(45, 38, 34, 0.5); padding: 0.28rem 0.7rem; border-radius: 999px; pointer-events: none; }
+  .ba-label-before { left: 0.8rem; }
+  .ba-label-after { right: 0.8rem; }
+  .disclaimer { text-align: center; font-size: 0.8rem; color: var(--text-soft); font-style: italic; margin-top: 1.4rem; }
+
+  /* ===== Doctors ===== */
+  .doctors-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.6rem; max-width: 880px; margin-inline: auto; }
+  .doctor-card { display: flex; gap: 1.2rem; align-items: center; background: rgba(255, 255, 255, 0.9); border: 1px solid rgba(220, 197, 178, 0.8); border-radius: var(--radius-lg); padding: 1.4rem; box-shadow: 0 16px 38px rgba(167, 134, 108, 0.16); }
+  .doctor-photo { position: relative; width: 116px; height: 116px; flex-shrink: 0; border-radius: 20px; background: radial-gradient(circle at 30% 25%, #fff, #f3b8a4); display: flex; align-items: center; justify-content: center; font-family: "Playfair Display", serif; font-size: 2rem; color: #fff; font-weight: 700; box-shadow: inset 0 -10px 24px rgba(159, 122, 96, 0.25); }
+  .doctor-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; display: block; }
+  .doctor-photo .yrs { position: absolute; bottom: -10px; right: -10px; background: #fff; border: 1px solid rgba(217, 179, 140, 0.8); border-radius: 14px; padding: 0.25rem 0.55rem; text-align: center; box-shadow: 0 8px 20px rgba(40,23,10,0.12); line-height: 1; }
+  .doctor-photo .yrs b { display: block; font-size: 1rem; color: #5b4336; }
+  .doctor-photo .yrs small { font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-soft); }
+  .doctor-info h4 { margin: 0 0 0.2rem; font-size: 1.2rem; font-weight: 700; }
+  .doctor-info .role { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-deep); font-weight: 700; margin-bottom: 0.5rem; }
+  .doctor-info p { margin: 0 0 0.6rem; font-size: 0.88rem; color: var(--text-soft); line-height: 1.55; }
+  .doctor-info a { font-size: 0.8rem; font-weight: 700; color: #5b4336; border-bottom: 1px solid rgba(193,160,139,0.6); }
+
+  /* ===== Why / USP ===== */
+  .why-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.2rem; }
+  .why-card { background: rgba(255, 255, 255, 0.85); border: 1px solid rgba(220, 197, 178, 0.7); border-radius: var(--radius-md); padding: 1.5rem 1.3rem; text-align: center; }
+  .why-card .t-icon { margin: 0 auto 0.9rem; }
+  .why-card h4 { margin: 0 0 0.4rem; font-size: 1.02rem; font-weight: 700; }
+  .why-card p { margin: 0; font-size: 0.85rem; color: var(--text-soft); line-height: 1.55; }
+
+  /* ===== Final CTA ===== */
+  .cta-band { border-radius: var(--radius-lg); background: radial-gradient(circle at top left, rgba(255, 243, 235, 0.96), rgba(244, 213, 194, 0.98)); border: 1px solid rgba(219, 180, 151, 0.9); box-shadow: 0 20px 50px rgba(164, 118, 90, 0.3); padding: 3rem 2rem; text-align: center; }
+  .cta-band h2 { font-size: clamp(1.8rem, 3.4vw, 2.5rem); margin: 0 0 0.7rem; font-weight: 700; }
+  .cta-band p { color: #6b574a; font-size: 1.02rem; margin: 0 0 1.6rem; }
+  .cta-band .hero-ctas { justify-content: center; margin-bottom: 0; }
+
+  /* ===== Footer ===== */
+  .footer { padding: 3rem 0 1.4rem; border-top: 1px solid rgba(213, 192, 171, 0.8); margin-top: 1rem; }
+  .footer-inner { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2.2rem; }
+  .footer h5 { font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: #6b574a; margin: 0 0 0.9rem; }
+  .footer p, .footer a { font-size: 0.9rem; color: var(--text-soft); line-height: 1.7; }
+  .footer a:hover { color: var(--accent-deep); }
+  .footer ul { list-style: none; padding: 0; margin: 0; }
+  .footer ul li { margin-bottom: 0.4rem; }
+  .footer-brand p { max-width: 22rem; }
+  .footer-socials { display: flex; gap: 0.8rem; margin-top: 0.8rem; }
+  .footer-bottom { text-align: center; font-size: 0.78rem; color: var(--text-soft); margin-top: 2rem; padding-top: 1.2rem; border-top: 1px solid rgba(216, 193, 173, 0.7); }
+
+  /* ===== Sticky mobile bar ===== */
+  .mobile-bar { display: none; }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 980px) {
+    .hero-inner { grid-template-columns: minmax(0, 1fr); gap: 2.2rem; }
+    .treatments-grid, .why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .doctors-grid { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr; gap: 1.6rem; }
+  }
+  @media (max-width: 620px) {
+    .header-phone, .header-cta { display: none; }
+    .treatments-grid, .why-grid { grid-template-columns: 1fr; }
+    .doctor-card { flex-direction: column; text-align: center; }
+    .doctor-photo .yrs { right: 50%; transform: translateX(50%); }
+    body { padding-bottom: 72px; }
+    .mobile-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; position: fixed; bottom: 0; left: 0; right: 0; z-index: 70; padding: 0.6rem 0.8rem; background: rgba(250, 244, 238, 0.97); border-top: 1px solid rgba(218, 198, 178, 0.8); backdrop-filter: blur(14px); }
+    .mobile-bar .btn { padding: 0.8rem 0.5rem; font-size: 0.78rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="lp-header">
+  <div class="container header-inner">
+    <a class="logo" href="https://cinchclinics.com/index.html">
+      <img src="https://cinchclinics.com/assets/images/clinic/CINCH-CLINICS-logo.webp" alt="Cinch Clinics logo" />
+      <span class="logo-text">
+        <span class="logo-name serif">Cinch Clinics</span>
+        <span class="logo-tag">Cosmetic &amp; Skin Care</span>
+      </span>
+    </a>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:919429420225">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.74a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z"/></svg>
+        +91 942 942 0225
+      </a>
+      <a class="btn primary header-cta" href="#book">Book Consultation</a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <span class="eyebrow"><span class="dot"></span> Gachibowli &middot; Hyderabad</span>
+      <h1>Real Skin Results Start With <span>A Real Diagnosis</span></h1>
+      <p class="hero-sub">Random creams and viral serums will not fix acne, pigmentation, or dull skin. Get a dermatologist-designed treatment plan built for your skin type, and finally see the difference.</p>
+      <div class="hero-ctas">
+        <a class="btn primary lg" href="tel:919429420225">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.74a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Now
+        </a>
+        <a class="btn whatsapp lg" href="https://wa.me/919429420225?text=Hi%20Cinch%20Clinics%2C%20I%20want%20to%20book%20a%20skin%20consultation." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+      <div class="trust-row">
+        <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg> Board-certified dermatologists</span>
+        <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg> Advanced skin technology</span>
+        <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg> Personalised plans</span>
+      </div>
+    </div>
+
+    <!-- Lead form -->
+    <div class="lead-card" id="book">
+      <span class="badge">100% Free Consultation</span>
+      <h3 class="serif">Book Your Consultation</h3>
+      <p class="muted">Tell us your skin concern. Our team will call you back with a personalised plan.</p>
+      <form id="leadForm" onsubmit="return sendLead(event)">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+91 ..." required />
+        </div>
+        <div class="field">
+          <label for="treatment">Concern / treatment</label>
+          <select id="treatment" name="treatment">
+            <option>HydraFacial</option>
+            <option>Medifacial</option>
+            <option>Chemical peel</option>
+            <option>RF microneedling</option>
+            <option>Acne &amp; acne scars</option>
+            <option>Pigmentation / melasma</option>
+            <option>Open pores</option>
+            <option>Tan removal</option>
+            <option>Anti-ageing / glow</option>
+            <option>Not sure - need advice</option>
+          </select>
+        </div>
+        <button type="submit" class="btn whatsapp full lg">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          Send on WhatsApp
+        </button>
+        <p class="form-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Your details are 100% private and secure.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Treatments -->
+<section class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-label">Our Skin Treatments</div>
+      <h2 class="serif">Every Skin Solution Under One Roof</h2>
+      <p>From deep-cleansing facials to advanced resurfacing. Pick any treatment, book a consultation, and get a plan that fits your skin.</p>
+    </div>
+    <div class="treatments-grid" id="treatments"></div>
+    <div class="center-cta">
+      <a class="btn primary lg" href="tel:919429420225">Get Expert Advice On Any Treatment</a>
+    </div>
+  </div>
+</section>
+
+<!-- Concerns -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-label">What We Treat</div>
+      <h2 class="serif">Concerns We Solve Every Day</h2>
+      <p>If any of these sound familiar, a consultation is the right first step.</p>
+    </div>
+    <div class="concerns-grid">
+      <span class="concern-pill">Acne &amp; breakouts</span>
+      <span class="concern-pill">Pigmentation &amp; melasma</span>
+      <span class="concern-pill">Tanning</span>
+      <span class="concern-pill">Open pores</span>
+      <span class="concern-pill">Dull, uneven skin</span>
+      <span class="concern-pill">Acne scars</span>
+      <span class="concern-pill">Fine lines &amp; ageing</span>
+      <span class="concern-pill">Blackheads &amp; congestion</span>
+    </div>
+  </div>
+</section>
+
+<!-- Results -->
+<section class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-label">Real Results</div>
+      <h2 class="serif">See The Difference Cinch Makes</h2>
+      <p>Real patients. Real treatment plans. No filters, no shortcuts.</p>
+    </div>
+    <div class="ba-compare" id="baCompare">
+      <img class="ba-base" src="https://cinchclinics.com/assets/images/services/after.webp" alt="After treatment at Cinch Clinics" />
+      <div class="ba-before-layer" id="baBefore">
+        <img src="https://cinchclinics.com/assets/images/services/before.webp" alt="Before treatment at Cinch Clinics" />
+      </div>
+      <div class="ba-divider" id="baDivider"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></span></div>
+      <span class="ba-label ba-label-before">Before</span>
+      <span class="ba-label ba-label-after">After</span>
+    </div>
+    <p class="disclaimer">Drag the slider to compare. Real patient result from Cinch Clinics. Outcomes vary with skin type, condition, and treatment plan.</p>
+  </div>
+</section>
+
+<!-- Doctors -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-label">The Experts</div>
+      <h2 class="serif">Meet The Doctors Behind Cinch</h2>
+      <p>Your treatment is led by qualified dermatologists, not technicians or salespeople.</p>
+    </div>
+    <div class="doctors-grid">
+      <div class="doctor-card">
+        <div class="doctor-photo"><img src="https://cinchclinics.com/assets/images/clinic/dr-ankith-yarlagadda-cosmetic-surgeon-khajaguda.webp" alt="Dr Ankith Yarlagadda" /><span class="yrs"><b>10+</b><small>Years</small></span></div>
+        <div class="doctor-info">
+          <div class="role">Cosmetic &amp; Aesthetic Surgeon</div>
+          <h4 class="serif">Dr. Ankith Yarlagadda</h4>
+          <p>MBBS, MS, FACS. Cosmetic and aesthetic surgical procedures and advanced body contouring.</p>
+          <a href="https://cinchclinics.com/dr-ankith-yarlagadda.html" target="_blank" rel="noopener">View full profile</a>
+        </div>
+      </div>
+      <div class="doctor-card">
+        <div class="doctor-photo"><img src="https://cinchclinics.com/assets/images/clinic/Dr-Bhamini-dermatologist-khajaguda.webp" alt="Dr Bhamini Guttikonda" /><span class="yrs"><b>7+</b><small>Years</small></span></div>
+        <div class="doctor-info">
+          <div class="role">Dermatologist &amp; Lasers</div>
+          <h4 class="serif">Dr. Bhamini Guttikonda</h4>
+          <p>MBBS, DDVL. Expert in lasers, peels, HydraFacial, Botox, fillers, and medical-grade skin care.</p>
+          <a href="https://cinchclinics.com/dr-bhamini.html" target="_blank" rel="noopener">View full profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why choose -->
+<section class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-label">Why Cinch Clinics</div>
+      <h2 class="serif">Built For Real, Lasting Results</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <span class="t-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg></span>
+        <h4>Dermatologist-Led</h4>
+        <p>Every plan is designed and supervised by qualified skin doctors.</p>
+      </div>
+      <div class="why-card">
+        <span class="t-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+        <h4>Proper Diagnosis</h4>
+        <p>We find the root cause first, so you stop wasting money on the wrong products.</p>
+      </div>
+      <div class="why-card">
+        <span class="t-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg></span>
+        <h4>Advanced Tech</h4>
+        <p>Medical-grade facials, peels, and resurfacing under one roof in Gachibowli.</p>
+      </div>
+      <div class="why-card">
+        <span class="t-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+        <h4>Honest, Transparent</h4>
+        <p>Clear pricing and realistic timelines. No pressure, no false promises.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <h2 class="serif">Ready For Skin You Love?</h2>
+      <p>Book your free consultation today and get a plan built for your skin, not a guess.</p>
+      <div class="hero-ctas">
+        <a class="btn primary lg" href="tel:919429420225">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.74a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call +91 942 942 0225
+        </a>
+        <a class="btn whatsapp lg" href="https://wa.me/919429420225?text=Hi%20Cinch%20Clinics%2C%20I%20want%20to%20book%20a%20skin%20consultation." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="logo" href="https://cinchclinics.com/index.html">
+          <img src="https://cinchclinics.com/assets/images/clinic/CINCH-CLINICS-logo.webp" alt="Cinch Clinics logo" />
+          <span class="logo-text"><span class="logo-name serif">Cinch Clinics</span><span class="logo-tag">Cosmetic &amp; Skin Care</span></span>
+        </a>
+        <p>A dermatology-led sanctuary for luminous, long-term skin and hair health in Gachibowli, Hyderabad.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/cinchclinics/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=61574346802744" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div>
+        <h5>Skin Treatments</h5>
+        <ul>
+          <li><a href="https://cinchclinics.com/hydrafacial.html">HydraFacial</a></li>
+          <li><a href="https://cinchclinics.com/chemical-peels.html">Chemical peels</a></li>
+          <li><a href="https://cinchclinics.com/rf-microneedling.html">RF microneedling</a></li>
+          <li><a href="https://cinchclinics.com/open-pores.html">Open pores</a></li>
+          <li><a href="https://cinchclinics.com/tan-removal.html">Tan removal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>Cinch Clinics, 2nd Floor,<br />Raidurgam, Gachibowli, Hyderabad</p>
+        <p><a href="tel:919429420225">+91 942 942 0225</a><br /><a href="mailto:Cinchclinics2025@gmail.com">Cinchclinics2025@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Cinch Clinics. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- Sticky mobile bar -->
+<div class="mobile-bar">
+  <a class="btn primary" href="tel:919429420225">Call Now</a>
+  <a class="btn whatsapp" href="https://wa.me/919429420225?text=Hi%20Cinch%20Clinics%2C%20I%20want%20to%20book%20a%20skin%20consultation." target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+  var TREATMENTS = [
+    ["HydraFacial", "Deep-cleansing facial for instant glow and hydration.", "https://cinchclinics.com/assets/skincare-1/HydraFacial.webp"],
+    ["Medifacials", "Medical-grade facials tailored to your skin.", "https://cinchclinics.com/assets/skincare-1/Medifacials.webp"],
+    ["Chemical Peels", "Resurface skin to fade pigmentation and dullness.", "https://cinchclinics.com/assets/skincare-1/Chemical%20peels.webp"],
+    ["RF Microneedling", "Tighten skin and soften acne scars.", "https://cinchclinics.com/assets/skincare-1/RF%20microneedling.webp"],
+    ["Open Pores", "Refine and minimise enlarged pores.", "https://cinchclinics.com/assets/skincare-1/Open%20pores.webp"],
+    ["Tan Removal", "Restore even, brighter skin tone.", "https://cinchclinics.com/assets/skincare-1/Tan%20removal.webp"],
+    ["Stretch Marks", "Reduce the appearance of stretch marks.", "https://cinchclinics.com/assets/skincare-1/Stretch%20marks.webp"],
+    ["Mole and Wart Removal", "Safe, precise removal by dermatologists.", "https://cinchclinics.com/assets/skincare-1/Mole%20%26%20wart%20removal.webp"],
+    ["Tattoo Removal", "Laser removal of unwanted tattoos.", "https://cinchclinics.com/assets/skincare-1/Tattoo%20removal.webp"]
+  ];
+  (function () {
+    var grid = document.getElementById("treatments");
+    var phone = "919429420225";
+    grid.innerHTML = TREATMENTS.map(function (t) {
+      return '<div class="treatment-card">' +
+        '<div class="t-img"><img loading="lazy" src="' + t[2] + '" alt="' + t[0] + ' at Cinch Clinics" /></div>' +
+        '<div class="t-body">' +
+        '<h3>' + t[0] + '</h3>' +
+        '<p>' + t[1] + '</p>' +
+        '<a class="t-call" href="tel:' + phone + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.74a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z"/></svg> Call Now</a>' +
+        '</div>' +
+        '</div>';
+    }).join("");
+  })();
+
+  (function () {
+    var c = document.getElementById("baCompare");
+    if (!c) return;
+    var before = document.getElementById("baBefore");
+    var divider = document.getElementById("baDivider");
+    var dragging = false;
+    function setPos(clientX) {
+      var r = c.getBoundingClientRect();
+      var v = ((clientX - r.left) / r.width) * 100;
+      v = Math.max(0, Math.min(100, v));
+      before.style.clipPath = "inset(0 " + (100 - v) + "% 0 0)";
+      divider.style.left = v + "%";
+    }
+    c.addEventListener("pointerdown", function (e) { dragging = true; setPos(e.clientX); try { c.setPointerCapture(e.pointerId); } catch (x) {} });
+    c.addEventListener("pointermove", function (e) { if (dragging) setPos(e.clientX); });
+    window.addEventListener("pointerup", function () { dragging = false; });
+    c.addEventListener("pointercancel", function () { dragging = false; });
+  })();
+
+  function sendLead(e) {
+    e.preventDefault();
+    var name = document.getElementById("name").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var treatment = document.getElementById("treatment").value;
+    var text = "Hi Cinch Clinics, I'd like to book a skin consultation.%0A%0AName: " +
+      encodeURIComponent(name) + "%0APhone: " + encodeURIComponent(phone) +
+      "%0AConcern: " + encodeURIComponent(treatment);
+    window.open("https://wa.me/919429420225?text=" + text, "_blank");
+    return false;
+  }
+</script>
+</body>
+</html>
